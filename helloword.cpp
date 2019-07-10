@@ -5,6 +5,12 @@ using namespace std;
 #define newLine "\n"
 int func();
 static int count = 10;
+enum color {
+    red,
+    yellow,
+    grad,
+} dd;
+int nameee = dd;
 int main()
 {
     typedef int free;

@@ -1,15 +1,16 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int counts  = 10;
+static int counts = 10;
 void fun();
-void fun(){
-    static int num = 5;
+void fun()
+{
+    int num = 5;
     num++;
-    cout<<"num:"<<num<<endl;
-    cout<<"count:"<<counts<<endl;
+    cout << "num:" << num << "counts:" << counts << endl;
 }
-int main(){
+int main()
+{
     char name[] = "liMing";
     while (counts != 0)
     {
