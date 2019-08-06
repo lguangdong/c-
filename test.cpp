@@ -2,6 +2,7 @@
 #include<fstream>
 #include<string>
 #include<cctype>
+#include<cstring>
 using namespace std;
 void sayHello(ostream any_out_stream);
 int pluss(int a,int b){
@@ -34,11 +35,19 @@ int main(){
 
 
     //=====array=======
-    int score[5];
+    int score[5] = {1,2,3,4};
     int c = 10,d = 20;
     pluss(c,d);
     pluss<int>(c,d);
+    char name[] = "helloword";
+    cout << name<<endl;
 
+    char myClass[5] = "haha";
+    strncpy(myClass,"helloword!!",5);
+    strcpy(myClass,"helloword");
+    cout << myClass << strlen(myClass)<<endl;
+    cout << strlen(myClass) << endl;
+    cout << strcmp(myClass,"hello") <<endl;
     return 0;
 }
 
